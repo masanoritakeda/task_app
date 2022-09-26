@@ -3,7 +3,7 @@
   <div class="dropdown">
     <button class="dropdown_btn" id="dropdown__btn">ワークスペースを選択</button>
     <div class="dropdown_body">
-      <ul class="dropdown_list">
+      <ul class="dropdown_list"> 
         <% @categories.first(10).each do |category| %>
           <li class="dropdown_item"><%= link_to category.name, categories_path(category_id: category.id) %></li>
         <% end %>
@@ -30,5 +30,16 @@
 </div>
 <% end %>
   
-
+<div class="dropdown">
+  <button class="dropdown_btn" id="dropdown_btn">
+   a
+  </button>
+  <div class="dropdown_body">
+    <ul class="dropdown_list">
+      <li class="dropdown_item"><a href="https://www.google.com/" class="dropdown_item-link">Google</a></li>
+      <li class="dropdown_item"><a href="https://www.yahoo.co.jp/" class="dropdown_item-link">Yahoo! JAPAN</a></li>
+      <li class="dropdown_item"><a href="https://www.bing.com/" class="dropdown_item-link">Bing</a></li>
+    </ul>
+  </div>
+</div>
 	
